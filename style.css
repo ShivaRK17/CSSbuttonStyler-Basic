@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color:rgb(229, 255, 180);
+}
+.headin{
+    text-align: center;
+    margin: 0 5px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Red Hat Mono', monospace;
+}
+.maincont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.select{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Red Hat Mono', monospace;
+    height: 300px;
+    width: 35vw;
+    background-color: rgb(184, 184, 255);
+    border: 3px double blue;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
+.but{
+    height: 350px;
+    width: 35vw;
+    background-color: rgb(255, 180, 180);
+    border: 3px double red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.code{
+    height:150px;
+    width: 35vw;
+    background-color: rgb(255, 205, 255);
+    border: 3px double violet;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border: 3px double violet;
+    font-family: 'Ubuntu Mono', monospace;
+}
+.btn{
+    /* border: none;*/
+    padding: 5px;
+}
+
+.done{
+    margin: 10px auto;
+    padding: 2px;
+    font-family: 'Ubuntu Mono', monospace;
+    background-color:greenyellow;
+    font-size: 1.2rem;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+.set{
+    margin: 5px 0;
+}
+@media screen and (max-width:950px){
+    .select,.but{
+        width: 45vw;
+    }
+} 
+@media screen and (max-width:740px){
+    .maincont{
+        flex-direction: column;
+    }
+    .select,.but,.code{
+        width: 90vw;
+    }
+} 

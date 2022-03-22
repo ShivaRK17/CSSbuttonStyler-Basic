@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Button Selector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="headin">
+        <h1>CSS Button Styler(Basic Version)</h1>
+        <!-- <input type="text" > -->
+    </div>
+    <div class="maincont">
+
+        <div class="select">
+            <label for="textin">Button Text </label>
+            <input type="text" class="set" id="textin" placeholder="Enter text" onchange="getVal()"> <br>
+            <label for="numberin">Button Font Size </label>
+            <input type="number" class="set" id="numberin" placeholder="Enter Font Size(px)" onchange="getNum()"> <br>
+            <!-- <input type="range" min="1" max="100" class="slider" id="myRange"> <br> -->
+            <label for="colorin">Text Color </label>
+            <input type="color" value="#ffffff" class="set" id="colorin" onchange="getCol()"> <br>
+            <label for="colorout">Background Color </label>
+            <input type="color" value="#ffffff" class="set" id="colorout" onchange="getbgCol()"> <br>
+            <label for="radiusin">Border Radius </label>
+            <input type="number" id="radiusin" class="set" placeholder="Enter Border Radius(px)" onchange="getradius()"> <br>
+            <label for="paddin">Padding</label>
+            <input type="number" id="paddin" class="set" placeholder="Enter Padding(px)" onchange="getpad()"> <br>
+            <label for="margin">Margin</label>
+            <input type="number" id="margin" class="set" placeholder="Enter Margin(px)" onchange="getmar()"> <br>
+            <button class="done" type="submit" onclick="alldone()">Done!</button>
+        </div>
+        <div class="but">
+            <button class="btn">Click Me</button>
+        </div>
+    </div>
+    <div class="code">
+        <p>.btn{</p>
+        <p class="codehere"></p>
+        <p>}</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
