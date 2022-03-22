@@ -70,7 +70,10 @@ body{
     margin: 5px 0;
 }
 @media screen and (max-width:950px){
-    .select,.but{
+    .select{
+        width: 45vw;
+    }
+    .but{
         width: 45vw;
     }
 } 
@@ -78,7 +81,16 @@ body{
     .maincont{
         flex-direction: column;
     }
-    .select,.but,.code{
+    .headin{
+        font-size:0.9rem;
+    }
+    .select{
+        width: 90vw;
+    }
+    .but{
+        width: 90vw;
+    }
+    .code{
         width: 90vw;
     }
 } 
